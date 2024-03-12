@@ -109,11 +109,11 @@ We have implemented Mutable Web on top of the current B.O.S architecture and rel
 
     d. A Parser extracts the context data from the raw source of a specific type and builds up the semantic tree of it. Widgets use their nodes as Context. Currently, there are three kinds of Parsers:
 
-            *HTML Parser - parses the raw HTML. Every specific webpage needs its own Config.
+    * HTML Parser - parses the raw HTML. Every specific webpage needs its own Config.
 
-            *BOS Parser - create context nodes from the props provided to B.O.S components. It is a built-in universal parser. Some contexts may require additional processing.
+    * BOS Parser - create context nodes from the props provided to B.O.S components. It is a built-in universal parser. Some contexts may require additional processing.
 
-            *Microdata Parser - extract microdata metadata from HTML (experimental one).
+    * Microdata Parser - extract microdata metadata from HTML (experimental one).
 
     It is a built-in universal parser.
 
