@@ -151,28 +151,37 @@ Fulfill the grant contract.
 
    a. upgrade the dependency react-singleton-hook from ^3.1.1 to ^4.0.1,
    due to official React 18 support
+   
    b. move dependency `styled-components` into `peerDependencies`, to reuse it in `mutable-web-engine` and `near-social-vm`.
+   
    c. add parameter `skipTxConfirmationPopup`, switches off modal windows while sending transactions
+   
    d. add parameter `enableComponentPropsDataKey`, controlling the props insertion into the HTML-attribute `data-props` as serialized JSON string. BosParser needs the attributes to parse Contexts.
+   
    e. (BREAKING CHANGE) behavior change for the `enableComponentSrcDataKey` parameter. Now it inserts component names into HTML-attribute `data-component` only in the root level, not to all as before. BosParser requires these attributes for Context parsing.
+   
    f. Bugfix: if `enableComponentSrcDataKey` is active, the attribute `data-component` got inserted into React-node`React.Fragment`, which is not visible in HTML-tree.
+   
    (Warning: Invalid prop `data-component` passed to `React.Fragment`. React.Fragment can only have key and child props.)
 
-3. **PR-2: Pull Request for B.O.S-Gateway**
+4. **PR-2: Pull Request for B.O.S-Gateway**
 
    _Changes_ :
 
    a. add new dependency `mutable-web-engine` - the Mutable Web Engine.
    Starts on gateway start.
+   
    b. add Mutation switch in the upper gateway panel.
+   
    c. Features enableComponentPropsDataKey, enableComponentSrcDataKey activated for Parser.
+   
    d. Webpack Config: deps `styled-components` and `near-social-vm` are reused in `mutable-web-engine`
 
    _To-do before merge_:
 
    1. Merge PR-1 for B.O.S-VM first!
-   2. Replace the forked dep `near-social-vm` with the dep to the original B.O.S-VM after PR-1 applied.
-   3. Switch off the flag `skipTxConfirmationPopup`, if needed
+   3. Replace the forked dep `near-social-vm` with the dep to the original B.O.S-VM after PR-1 applied.
+   4. Switch off the flag `skipTxConfirmationPopup`, if needed
 
 ## Delivery Plan: Release 2 - add legacy web support
 
