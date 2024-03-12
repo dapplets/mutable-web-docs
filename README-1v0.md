@@ -123,11 +123,11 @@ We have implemented Mutable Web on top of the current B.O.S architecture and rel
 
     b. For every context node in the semantic tree, for all Applications …
 
-        *Resolve conditions for all targets using Context properties. Skip targets if conditions are not met.
+* Resolve conditions for all targets using Context properties. Skip targets if conditions are not met.
 
-        *For remaining targets, calculate the index (if any), and load InjectionLinks from storage.
+* For remaining targets, calculate the index (if any), and load InjectionLinks from storage.
 
-        *Inject Widgets for all loaded injection links into the remaining targets.
+* Inject Widgets for all loaded injection links into the remaining targets.
 
 ## Delivery Plan: Release 1 - Pure B.O.S (Initial release)
 
