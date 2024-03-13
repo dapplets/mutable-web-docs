@@ -32,19 +32,18 @@ We have implemented Mutable Web on top of the current B.O.S architecture and rel
 
     a. Every Mutation consists of Applications implementing particular business cases.
 
-    ```
+    ```javascript
     Provider.createMutation({
-    "id": "bos.dapplets.near/mutation/Sandbox",
-    "metadata": {
-     "name": "Sandbox",
-     "description": "Playground where anyone can inject BOS components",
-     "image": {
-       "ipfs_cid": "bafkreihxajq5ujkgp4t7uadmymet4s62z2rnqb22okpw4vb7atichoq7oy"
-     }
-    },
-    "apps": ["bos.dapplets.near/app/Paywall","bos.dapplets.near/app/Tipping"]
+      "id": "bos.dapplets.near/mutation/Sandbox",
+      "metadata": {
+        "name": "Sandbox",
+        "description": "Playground where anyone can inject BOS components",
+        "image": {
+          "ipfs_cid": "bafkreihxajq5ujkgp4t7uadmymet4s62z2rnqb22okpw4vb7atichoq7oy"
+        }
+      },
+      "apps": ["bos.dapplets.near/app/Paywall","bos.dapplets.near/app/Tipping"]
     })
-
     ```
 
     b. Applications consist of a Controller and a bunch of Widgets implemented as B.O.S components, which are injected into the target website.
