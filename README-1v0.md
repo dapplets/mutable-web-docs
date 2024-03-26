@@ -1,10 +1,16 @@
-# Mutable Web 4 B.O.S - Release 1 (initial MVP)
-
-#### version 1.0 of 23.02.
+# Mutable Web 4 B.O.S - Releases 1 & 2 (initial BOS MVP and web2 support)  
 
 ## Purpose of our work
 
-We have implemented Mutable Web on top of the current B.O.S architecture and released it as a Pull Request. It is our contribution to the B.O.S core development. We hope Mutable Web will become the standard functionality of B.O.S in the future.
+We have implemented Mutable Web on top of the current B.O.S architecture and released it as a Pull Request. It is our contribution to the B.O.S core development. We hope Mutable Web will become the standard functionality of B.O.S in the future. Release 2 introduced the Mutable Web support for web2 websites.
+
+## TLDR; Demos and videos 
+   * Release 1: Near Social running on our Mutable Web Gateway: [Demo](https://social.dapplets.org) 
+               and the demo video.
+   * Release 2: Twitter in Mutable Web: [Mutable Twitter](https://augm.link/mutate?t=https://twitter.com/MrConCreator&m=bos.dapplets.near/mutation/Sandbox) and the demo video.
+
+
+for the Long Read continue reading...
 
 ## Introduction
 
@@ -191,13 +197,11 @@ Fulfill the grant contract.
 Enable the Mutable Web functionality (an MVP) on legacy websites.
 Implement the B.O.S. Gateway as a browser extension
 
-### Due date:
+### Released on 14.03.2024:
 
-01.03.2024 - working alpha preview
+14.03.2024 - released as [Mutable Web Extension](https://chromewebstore.google.com/detail/cnahdmdbhkphpbpbjjbfdnmbphbenglc) on Google Web Store.
 
-14.03.2024 - release.
-
-## Delivery Plan: Release 3 - Mutation management
+## Delivery Plan: Release 3.x - Mutation management
 
 ### Objective:
 
@@ -207,4 +211,4 @@ Using AstroDAO as the DAO management platform.
 
 ### Due date (preliminary):
 
-01.04.2024 - release (preliminary)
+08.04.2024 - release 3.1 (without AstroDAO functionality)
