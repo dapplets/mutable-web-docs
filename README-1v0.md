@@ -5,9 +5,11 @@
 We have implemented Mutable Web on top of the current B.O.S architecture and released it as a Pull Request. It is our contribution to the B.O.S core development. We hope Mutable Web will become the standard functionality of B.O.S in the future. Release 2 introduced the Mutable Web support for web2 websites.
 
 ## TLDR; Demos and videos 
-   * Release 1: Near Social running on our Mutable Web Gateway: [Demo](https://social.dapplets.org) 
-               and the demo video.
-   * Release 2: Twitter in Mutable Web: [Mutable Twitter](https://augm.link/mutate?t=https://twitter.com/MrConCreator&m=bos.dapplets.near/mutation/Sandbox) and the demo video.
+   * **Release 1:** Near Social running on our Mutable Web Gateway.  
+     Watch the demo video and try the [Demo](https://social.dapplets.org).
+   * **Release 2:** Twitter on Mutable Web.  
+     Watch the demo video and try the [Mutable Twitter Demo](https://augm.link/mutate?t=https://twitter.com/MrConCreator&m=bos.dapplets.near/mutation/Sandbox).  
+    (*You will be asked to install the Mutable Web extention*).
 
 
 for the Long Read continue reading...
