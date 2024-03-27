@@ -56,31 +56,30 @@ for the Long Read continue reading...
 
     b. Applications consist of a Controller and a bunch of Widgets implemented as B.O.S components, which are injected into the target website.
 
-    ```
+    ```javascript
     Provider.createApplication({
-    "id": "bos.dapplets.near/app/Paywall",
-    "metadata": {
-     "name": "Paywall",
-     "description": "The Paywall Dapplet seamlessly integrates with Twitter, utilizing the NEAR Protocol and NEAR BOS to display paid content, a solution developed during the Web3 Hackfest 2023 hackathon.",
-     "image": {
-       "ipfs_cid": "bafkreihxajq5ujkgp4t7uadmymet4s62z2rnqb22okpw4vb7atichoq7oy"
-     }
-    },
-    "targets": [{
-     "namespace": "https://dapplets.org/ns/json/bos.dapplets.near/parser/twitter",
-     "contextType": "post",
-     "if": { "id": { "not": null, "index": true } }, // <--- condition
-     "injectTo": "afterText",                        // <--- injection point
-     "componentId": "bos.dapplets.near/widget/Paywall.Main"
-    },{
-     "namespace": "https://dapplets.org/ns/bos/bos.dapplets.near/parser/near-social",
-     "contextType": "post",
-     "if": { "id": { "not": null, "index": true } },
-     "injectTo": "afterText",
-     "componentId": "bos.dapplets.near/widget/Paywall.Main"
-    }]
+      "id": "bos.dapplets.near/app/Paywall",
+        "metadata": {
+        "name": "Paywall",
+        "description": "The Paywall Dapplet seamlessly integrates with Twitter, utilizing the NEAR Protocol and NEAR BOS to display paid content, a solution developed during the Web3 Hackfest 2023 hackathon.",
+        "image": {
+          "ipfs_cid": "bafkreihxajq5ujkgp4t7uadmymet4s62z2rnqb22okpw4vb7atichoq7oy"
+        }
+      },
+      "targets": [{
+        "namespace": "https://dapplets.org/ns/json/bos.dapplets.near/parser/twitter",
+        "contextType": "post",
+        "if": { "id": { "not": null, "index": true } }, // <--- condition
+        "injectTo": "afterText",                        // <--- injection point
+        "componentId": "bos.dapplets.near/widget/Paywall.Main"
+      },{
+        "namespace": "https://dapplets.org/ns/bos/bos.dapplets.near/parser/near-social",
+        "contextType": "post",
+        "if": { "id": { "not": null, "index": true } },
+        "injectTo": "afterText",
+        "componentId": "bos.dapplets.near/widget/Paywall.Main"
+      }]
     })
-
     ```
 
     c. The injection takes place in the User's browser. No server is getting hacked, and no further access needs to be granted. If you are familiar with aspect-oriented programming (AOP), you can think about Mutable Web as the web of aspects created by the Community. These web aspects can be applied to the websites no matter who the Owner is.
@@ -93,15 +92,15 @@ for the Long Read continue reading...
 
     g. A User can also create an injection link. Example: User places a sticker on a tweet of his choice.
 
-    ```
+    ```javascript
     Provider.createLink({
-    appId: "bos.dapplets.near/app/Paywall",
-    mutationId: "bos.dapplets.near/mutation/Sandbox",
-    namespace: "https://dapplets.org/ns/json/bos.dapplets.near/parser/twitter",
-    contextType: "post",
-    if: {
-     id: "123123213123"
-    }
+      appId: "bos.dapplets.near/app/Paywall",
+      mutationId: "bos.dapplets.near/mutation/Sandbox",
+      namespace: "https://dapplets.org/ns/json/bos.dapplets.near/parser/twitter",
+      contextType: "post",
+      if: {
+        id: "123123213123"
+      }
     })
 
     ```
