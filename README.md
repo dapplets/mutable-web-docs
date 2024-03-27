@@ -6,9 +6,9 @@ We have implemented Mutable Web on top of the current B.O.S architecture and rel
 
 ## TLDR; Demos and videos 
    * **Release 1:** Near Social running on our Mutable Web Gateway.  
-     Watch the demo video and try the [Demo](https://social.dapplets.org).
+     Watch the [demo Video](https://dapplets.org/r1/demo) and try the [Demo](https://social.dapplets.org).
    * **Release 2:** Twitter on Mutable Web.  
-     Watch the demo video and try the [Mutable Twitter Demo](https://augm.link/mutate?t=https://twitter.com/MrConCreator&m=bos.dapplets.near/mutation/Sandbox).  
+     Watch the [demo Video](https://dapplets.org/r1/demo) and try the [Mutable Twitter Demo](https://augm.link/mutate?t=https://twitter.com/MrConCreator&m=bos.dapplets.near/mutation/Sandbox).  
     (*You will be asked to install the Mutable Web extention*).
 
 
