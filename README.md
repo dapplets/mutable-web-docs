@@ -1,4 +1,4 @@
-# Mutable Web 4 B.O.S - Releases 1 & 2 (initial BOS MVP and web2 support)  
+# Mutable Web 4 B.O.S - Releases 1 & 2 (BOS MVP + web2 support)  
 
 ## Purpose of our work
 
