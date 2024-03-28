@@ -4,12 +4,18 @@
 
 We have implemented Mutable Web on top of the current B.O.S architecture and released it as a Pull Request. It is our contribution to the B.O.S core development. We hope Mutable Web will become the standard functionality of B.O.S in the future. Release 2 introduced the Mutable Web support for web2 websites.
 
-## TLDR; Demos and videos 
+## TLDR; Demos, Videos, and Artefacts 
    * **Release 1:** Near Social running on our Mutable Web Gateway.  
-     Watch the [demo Video](https://dapplets.org/r1/demo) and try the [Demo](https://social.dapplets.org).
-   * **Release 2:** Twitter on Mutable Web.  
-     Watch the [demo Video](https://dapplets.org/r1/demo) and try the [Mutable Twitter Demo](https://augm.link/mutate?t=https://twitter.com/MrConCreator&m=bos.dapplets.near/mutation/Sandbox).  
-    (*You will be asked to install the Mutable Web extention*).
+     Watch the [demo Video](https://www.youtube.com/watch?v=DfT0wK-y3dI) and try the [Demo](https://social.dapplets.org).  
+     **Artifacts**:  
+        * PR: VM + Mutable Web https://github.com/NearSocial/VM/pull/180
+        * PR: Gateway + Mutable Web: https://github.com/NearSocial/viewer/pull/230 
+   * **Release 2:** Mutable Twitter on Mutable Web.  
+     Watch the [demo Video ](https://www.youtube.com/watch?v=gj1ckhvZ5AE) and try the [Demo](https://augm.link/mutate?t=https://twitter.com/MrConCreator&m=bos.dapplets.near/mutation/Sandbox).  
+    (*You will be asked to install the Mutable Web extention*).  
+     **Artifacts**:  
+        * Mutable Web Extension sources on [GitHub](https://github.com/dapplets/mutable-web-extension)
+        * Mutable Web Extension binaries on [Google Web Store](https://chromewebstore.google.com/detail/cnahdmdbhkphpbpbjjbfdnmbphbenglc)
 
 
 for the Long Read continue reading...
@@ -154,6 +160,7 @@ Fulfill the grant contract.
    [Near Social](https://social.dapplets.org/)
 
 2. **PR-1: Pull Request for B.O.S-VM**.
+        https://github.com/NearSocial/VM/pull/180
 
    **Changes**:
 
@@ -174,7 +181,8 @@ Fulfill the grant contract.
 
 4. **PR-2: Pull Request for B.O.S-Gateway**
 
-   _Changes_ :
+   **Changes** :
+        https://github.com/NearSocial/viewer/pull/230 
 
    a. add new dependency `mutable-web-engine` - the Mutable Web Engine.
    Starts on gateway start.
